@@ -1,0 +1,9 @@
+.copyright {
+  font-size: 1rem;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .copyright {
+    font-size: 0.875rem;
+  }
+}

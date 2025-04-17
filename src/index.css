@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+.dark-theme {
+  --bg-color: #191919;
+  --text-color: #666;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.3s ease;
+}
+body .navbar-toggler-icon {
+  background-image: url("./assets/hamburger-menu-svgrepo-com.svg");
+}
+.dark-theme .navbar-toggler-icon {
+  background-image: url("./assets/burger-menu-svgrepo-com.svg");
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
