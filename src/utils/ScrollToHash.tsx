@@ -13,6 +13,6 @@ function ScrollToHashElement() {
     }
   }, [location]);
 
-  return null; // ده مجرد Component بيعمل Scroll، مش بيرجع UI
+  return null;
 }
 export default ScrollToHashElement;

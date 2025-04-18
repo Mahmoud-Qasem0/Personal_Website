@@ -1,10 +1,11 @@
-import React, { JSX, useContext} from "react";
+import React, { JSX, useContext } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import github from "../../assets/navbar/github.png";
 import linkedin from "../../assets/navbar/linkedin.png";
 import x from "../../assets/navbar/x.png";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { ThemeContext } from "../../context/ThemeContext/ThemeContext";
+import styles from "./header.module.css";
 
 const navItems = [
   { title: "Home", path: "#home" },
@@ -12,17 +13,25 @@ const navItems = [
   { title: "Projects", path: "#projects" },
 ];
 const socialLinks = [
-  { src: github, alt: "github",link: "https://github.com/Mahmoud-Qasem0" },
-  { src: linkedin, alt: "linkedin", link: "https://www.linkedin.com/in/mahmoud-qasem-64602528b/" },
+  { src: github, alt: "github", link: "https://github.com/Mahmoud-Qasem0" },
+  {
+    src: linkedin,
+    alt: "linkedin",
+    link: "https://www.linkedin.com/in/mahmoud-qasem-64602528b/",
+  },
   { src: x, alt: "x", link: "/" },
 ];
 
 const Header: React.FC = (): JSX.Element => {
   const { darkMode, toggleTheme } = useContext(ThemeContext);
+  // location to determine target section should be go to it when you were clicked on nav links
   const location = useLocation();
   return (
     <>
       <nav className="navbar fixed-top">
+        {/* make nav background appearence blur when you scroll down */}
+        <div
+          className={`position-absolute top left h-100  w-100 z-n1 ${styles.blur}`}></div>
         <div className="container">
           <Link className="navbar-brand gradient-text fw-bold" to="/">
             Coding way
@@ -34,7 +43,9 @@ const Header: React.FC = (): JSX.Element => {
                   to={`/${item.path}`}
                   className={`text-decoration-none ${
                     darkMode ? `text-white` : `text-secondary`
-                  } ${location.hash === item.path ? "gradient-text fw-bold" : ""}`}>
+                  } ${
+                    location.hash === item.path ? "gradient-text fw-bold" : ""
+                  }`}>
                   {item.title}
                 </Link>
               </li>
@@ -97,11 +108,11 @@ const Header: React.FC = (): JSX.Element => {
                   <li key={i} className="nav-item">
                     <NavLink
                       to={`/${item.path}`}
-                      className={
-                        `text-secondary ${
-                          location.hash === item.path ? "gradient-text fw-bold" : ""
-                        }`
-                      }
+                      className={`text-secondary ${
+                        location.hash === item.path
+                          ? "gradient-text fw-bold"
+                          : ""
+                      }`}
                       aria-current="page">
                       {item.title}
                     </NavLink>
