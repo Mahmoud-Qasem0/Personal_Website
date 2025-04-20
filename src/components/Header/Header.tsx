@@ -13,13 +13,21 @@ const navItems = [
   { title: "Projects", path: "#projects" },
 ];
 const socialLinks = [
-  { src: github, alt: "github", link: "https://github.com/Mahmoud-Qasem0" },
+  {
+    src: github,
+    alt: "github",
+    link: "https://github.com/Mahmoud-Qasem0",
+  },
   {
     src: linkedin,
     alt: "linkedin",
     link: "https://www.linkedin.com/in/mahmoud-qasem-64602528b/",
   },
-  { src: x, alt: "x", link: "/" },
+  {
+    src: x,
+    alt: "x",
+    link: "/",
+  },
 ];
 
 const Header: React.FC = (): JSX.Element => {
@@ -34,7 +42,7 @@ const Header: React.FC = (): JSX.Element => {
           className={`position-absolute top left h-100  w-100 z-n1 ${styles.blur}`}></div>
         <div className="container">
           <Link className="navbar-brand gradient-text fw-bold" to="/">
-            Coding way
+            M. Qasem
           </Link>
           <ul className="d-none d-md-flex align-items-center list-unstyled gap-4">
             {navItems.map((item, i) => (
@@ -94,7 +102,7 @@ const Header: React.FC = (): JSX.Element => {
               <h5
                 className="offcanvas-title gradient-text fw-bold"
                 id="offcanvasNavbarLabel">
-                Coding way
+                Mahmoud Qasem
               </h5>
               <button
                 type="button"

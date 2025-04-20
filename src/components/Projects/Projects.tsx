@@ -16,7 +16,7 @@ const projectscard = [
   {
     img: bookstore,
     title: "Book Store App",
-    desc: "A book store app to Buy books Stripe Payment",
+    desc: "A book shop to Buy books (use customer role not admin)",
     techStack: "React js, Redux Toolkit, TypeScript, MUI, Stripe Payment",
     demo: "https://bookstore2pp.netlify.app/",
     repo: "https://github.com/Mahmoud-Qasem0/React-js-Book_Store",
@@ -24,7 +24,7 @@ const projectscard = [
   {
     img: ums,
     title: "User Management System",
-    desc: "A user management system app built with complete CRUD",
+    desc: "A UMS app built with complete CRUD (user:emilys, pass:emilyspass)",
     techStack: "React js, TypeScript, React Bootstrap, RESTful API",
     demo: "https://ums-2pp.netlify.app/",
     repo: "https://github.com/Mahmoud-Qasem0/User_Management_System",

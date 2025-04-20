@@ -9,7 +9,6 @@ import bootstrap from "../../assets/skills/bootstrap.png";
 import tailwind from "../../assets/skills/tailwind.png";
 import sass from "../../assets/skills/sass.png";
 import git from "../../assets/skills/git.png";
-import greensock from "../../assets/skills/greensock.png";
 import greensockDark from "../../assets/skills/greensock-dark.png";
 import vscode from "../../assets/skills/vscode.png";
 import github from "../../assets/skills/github.png";
@@ -52,10 +51,6 @@ const skillsIcons = [
   {
     link: git,
     alt: "git icon",
-  },
-  {
-    link: greensock,
-    alt: "greensock icon",
   },
   {
     link: vscode,

@@ -18,7 +18,7 @@ const Contact = () => {
       <nav className="contact my-5">
         <div className="container d-flex justify-content-md-between flex-column flex-md-row align-items-center">
           <Link className="fs-4 gradient-text fw-bold my-4" to="/">
-            Coding way
+            Mahmoud Qasem
           </Link>
           <ul className="d-flex align-items-center flex-column flex-md-row list-unstyled gap-4">
             <li>

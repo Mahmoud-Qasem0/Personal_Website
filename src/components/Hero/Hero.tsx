@@ -21,8 +21,7 @@ const Hero: React.FC = (): JSX.Element => {
           className="text-center text-md-start">
           <h1 className={`${styles.userName} ${darkMode && "text-white"}`}>
             Hi 👋, My name is{" "}
-            <span className="gradient-text">Mahmoud Qasem</span> I build things
-            for web
+            <span className="gradient-text">Mahmoud Qasem</span> I am Frontend React Developer
           </h1>
         </motion.div>
         <motion.div
@@ -31,6 +30,7 @@ const Hero: React.FC = (): JSX.Element => {
           transition={{ duration: 1, delay: 1 }}
           className="image d-flex align-items-center d-none d-md-block">
           <img
+            decoding="async"
             src={profile}
             alt="User Photo"
             className={`img-fluid rounded-5 ${styles.userImage}`}
