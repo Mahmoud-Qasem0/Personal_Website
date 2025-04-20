@@ -1,18 +1,9 @@
-import React, { createContext, JSX, ReactNode, useEffect } from "react";
+import React, { JSX, ReactNode, useEffect } from "react";
+import { ThemeContext } from "./ThemeContext";
 
-interface ThemeContextType {
-  darkMode: boolean;
-  toggleTheme: () => void;
-}
 interface ThemeProviderProps {
   children: ReactNode;
 }
-
-export const ThemeContext = createContext<ThemeContextType>({
-  darkMode: false,
-  toggleTheme: () => {},
-});
-
 const ThemeProvider: React.FC<ThemeProviderProps> = ({
   children,
 }): JSX.Element => {
